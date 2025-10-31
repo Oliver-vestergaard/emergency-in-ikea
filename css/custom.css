@@ -4,7 +4,7 @@
   /* page background /*
 
   /* Header */
-  --color-head-bg: #d23f00;
+  --color-head-bg: #e92e0c;
 
   /* Logotype */
   --color-logotype-bg: #000;
@@ -24,7 +24,7 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #d23f00;
+  --color-headline-bg: #007a78;
   --color-headline-text-page: #fff5c4;
 
   /* Tekst */
@@ -38,7 +38,7 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #e92e0c;
+  --color-card-bg: #d23f00;
   --color-cta-card-bg: #d5d2d0;
   /* news-cards */
   --color-news-bg: #dbdad4;
