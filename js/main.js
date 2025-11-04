@@ -33,6 +33,11 @@ function clickNoedlager() {
 <p>bla bla lba </p>`;
   document.querySelector("#requirement").innerHTML = `<h3>Oliver</h3> 
 <p>Nu er det altså snart weekend </p>`;
+
+  // animation for Noedlager //
+
+  document.querySelector("#efficiency").classList.add("fadeIn");
+  document.querySelector("#requirement").classList.add("fadeInSlow");
 }
 
 // For Airtag //
@@ -69,6 +74,10 @@ function clickAirtag() {
 <p>bla bla lba </p>`;
   document.querySelector("#requirement").innerHTML = `<h3>Oliver</h3> 
 <p>Nu er det altså snart weekend </p>`;
+
+  // animation for Airtag //
+  document.querySelector("#efficiency").classList.add("fadeIn");
+  document.querySelector("#requirement").classList.add("fadeInSlow");
 }
 
 // For reb //
@@ -103,4 +112,9 @@ function clickReb() {
 <p>bla bla lba </p>`;
   document.querySelector("#requirement").innerHTML = `<h3>Oliver</h3> 
 <p>Nu er det altså snart weekend </p>`;
+
+  // animation for Reb //
+
+  document.querySelector("#efficiency").classList.add("fadeIn");
+  document.querySelector("#requirement").classList.add("fadeInSlow");
 }

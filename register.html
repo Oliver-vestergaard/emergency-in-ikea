@@ -1,81 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> LOGO-TYPE </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>INDBERET</h1>
+    <section id="form-section">
+      <article id="form-info">
+        <h2>Overskrift</h2>
+        <p>Tekst</p>
+      </article>
+
+      <form id="webform">
+        <fieldset>
+          <legend>Kontakt Oplysninger</legend>
+
+          <div id="id_fNavn">
+            <label for="fornavn">Fornavn</label>
+            <input type="text" id="fornavn" name="F-name">
+          </div>
+
+          <div id="id_eNavn">
+            <label for="efternavn">Efternavn</label>
+            <input type="text" id="efternavn" name="E-name">
+          </div>
+
+          <div id="id_mail">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="E-mail">
+          </div>
+
+          <div id="id_nummer">
+            <label for="tlf">Telefon Nummer</label>
+            <input type="number" id="tlf" name="tlf_nummer">
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+          <Legend>Information</Legend>
+          <div id="id_hvor">
+            <label for="hvor">I hvilken Ikea fandt uheldet sted?</label>
+            <select id="hvor" name="hvor">
+              <option value="">Vælg et sted</option>
+              <option value="Ikea ved fisketorvet">Ikea ved fisketorvet</option>
+              <option value="Ikea Gentofte">Ikea Gentofte</option>
+              <option value="Ikea Højetaastrup">Ikea ved Højetaastrup</option>
+            </select>
+          </div>
+
+          <div id="id_hvornår">
+            <label for="dato">Hvornår fandt uheldet sted?</label>
+            <input type="date" id="dato" name="dato">
+          </div>
+
+
+          <div id="id_textArea">
+            <label for="beskrivelse">Hvad skete der?</label>
+            <textarea id="beskrivelse" name="beskrivelse" rows="3"></textarea>
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Sikkerhed</legend>
+
+          <div id="id_råd">
+            <p>Har du fulgt eksperternes råd?</p>
+            <label><input type="radio" name="råd" value="Ja">Ja</label>
+            <label><input type="radio" name="råd" value="Nej">Nej</label>
+          </div>
+
+          <div id="id_hvilke">
+            <p>Hvilke?</p>
+            <label><input type="checkbox" name="Airtag" value="Airtag"> Brugt Airtag</label>
+            <label><input type="checkbox" name="Nødlager" value="Nødlager"> Medbragt nødlager</label>
+            <label><input type="checkbox" name="Reb" value="Reb"> Brugt sikkerhedsreb</label>
+            </select>
+          </div>
+
+          <div id="id_bekymret">
+            <p>Er du bekymret?</p>
+            <label><input type="radio" name="Bekymret" value="Ja">Ja</label>
+            <label><input type="radio" name="Bekymret" value="Nej">Nej</label>
+          </div>
+
+        </fieldset>
+
+        <button type="submit">Send</button>
+      </form>
+
+
+
+
+    </section>
+
+
+    <section id="form-summary">
+      <h2>Summary</h2>
+      <article>
+        <p class="placeholder">Opsummering</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

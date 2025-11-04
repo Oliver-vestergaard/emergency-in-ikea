@@ -1,10 +1,10 @@
 :root {
   /* Colours */
-  --color-bg: #df880b;
+  --color-bg: #fff5c4;
   /* page background /*
 
   /* Header */
-  --color-head-bg: #e92e0c;
+  --color-head-bg: #de8926;
 
   /* Logotype */
   --color-logotype-bg: #000;
@@ -24,12 +24,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #007a78;
-  --color-headline-text-page: #fff5c4;
+  --color-headline-bg: #de8926;
+  --color-headline-text-page: #ffffff;
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text-inverted: #fff;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
