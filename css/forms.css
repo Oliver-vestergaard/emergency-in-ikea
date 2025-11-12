@@ -30,3 +30,72 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+/********* EGEN STYLING ***********/
+
+#Kontakt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 0.5rem;
+}
+
+.form_group select {
+  min-width: 200px;
+}
+
+.form_group select:user-invalid {
+  border: 2px solid red;
+}
+
+.form_group textarea {
+  min-width: 400px;
+}
+
+input:focus {
+  background-color: white;
+  border-color: #000;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:invalid + span::before {
+  content: "Venligt indtast en gyldig Email";
+  color: red;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
+
+.submit {
+  box-shadow: 2px 2px 8px black;
+  min-width: 100px;
+  border-radius: 10px;
+}
+
+.submit:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+
+.hide {
+  display: none;
+}
+
+.form-group:has(:required) label::after {
+  content: " *";
+  color: red;
+}

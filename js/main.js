@@ -1,120 +1,119 @@
-// For Noedlager //
-document
-  .querySelector("#Noedlager")
-  .addEventListener("mouseover", mouseOverNoedlager);
+const noedlager = document.querySelector("#Noedlager");
+const Airtag = document.querySelector("#Airtag");
+const reb = document.querySelector("#Reb");
 
-document
-  .querySelector("#Noedlager")
-  .addEventListener("mouseout", mouseOutNoedlager);
+const efficiency = document.querySelector("#efficiency");
+const requirement = document.querySelector("#requirement");
+const placeholder = document.querySelector(".placeholder");
+const overskrift = document.querySelector(".info-text > h2");
+//* For Noedlager *//
 
-document.querySelector("#Noedlager").addEventListener("click", clickNoedlager);
+noedlager.addEventListener("mouseover", mouseOverNoedlager);
+
+noedlager.addEventListener("mouseout", mouseOutNoedlager);
+noedlager.addEventListener("click", clickNoedlager);
 
 function mouseOverNoedlager() {
   console.log("mouseOverNoedlager");
 
-  document.querySelector("#Noedlager").style.fill = "var(--primary-bg-color)";
+  noedlager.style.fill = "var(--primary-bg-color)";
 }
 
 function mouseOutNoedlager() {
   console.log("mouseOutNoedlager");
 
-  document.querySelector("#Noedlager").style.fill = "pink";
+  noedlager.style.fill = "pink";
 }
 
 function clickNoedlager() {
   console.log("clickNoedlager");
 
-  document.querySelector(".info-text > h2").textContent = "Nødlager";
+  overskrift.textContent = "Nødlager";
 
-  document.querySelector(".placeholder").textContent =
-    "husk at du får brug for et nødlager....";
+  placeholder.textContent = "husk at du får brug for et nødlager....";
 
-  document.querySelector("#efficiency").innerHTML = `<h3>Oliver</h3> 
+  efficiency.innerHTML = `<h3>Oliver</h3> 
 <p>bla bla lba </p>`;
-  document.querySelector("#requirement").innerHTML = `<h3>Oliver</h3> 
+  requirement.innerHTML = `<h3>Oliver</h3> 
 <p>Nu er det altså snart weekend </p>`;
 
   // animation for Noedlager //
 
-  document.querySelector("#efficiency").classList.add("fadeIn");
-  document.querySelector("#requirement").classList.add("fadeInSlow");
+  efficiency.classList.add("fadeIn");
+  requirement.classList.add("fadeInSlow");
 }
 
 // For Airtag //
 
-document
-  .querySelector("#Airtag")
-  .addEventListener("mouseover", mouseOverAirtag);
+Airtag.addEventListener("mouseover", mouseOverAirtag);
 
-document.querySelector("#Airtag").addEventListener("mouseout", mouseOutAirtag);
+Airtag.addEventListener("mouseout", mouseOutAirtag);
 
-document.querySelector("#Airtag").addEventListener("click", clickAirtag);
+Airtag.addEventListener("click", clickAirtag);
 
 function mouseOverAirtag() {
   console.log("mouseOverAirtag");
 
-  document.querySelector("#Airtag").style.fill = "var(--primary-bg-color)";
+  Airtag.style.fill = "var(--primary-bg-color)";
 }
 
 function mouseOutAirtag() {
   console.log("mouseOutAirtag");
 
-  document.querySelector("#Airtag").style.fill = "pink";
+  Airtag.style.fill = "pink";
 }
 
 function clickAirtag() {
   console.log("clickAirtag");
 
-  document.querySelector(".info-text > h2").textContent = "Airtag";
+  overskrift.textContent = "Airtag";
 
-  document.querySelector(".placeholder").textContent =
-    "husk at du får brug for et Airtag....";
+  placeholder.textContent = "husk at du får brug for et Airtag....";
 
-  document.querySelector("#efficiency").innerHTML = `<h3>Oliver</h3> 
+  efficiency.innerHTML = `<h3>Oliver</h3> 
 <p>bla bla lba </p>`;
-  document.querySelector("#requirement").innerHTML = `<h3>Oliver</h3> 
+  requirement.innerHTML = `<h3>Oliver</h3> 
 <p>Nu er det altså snart weekend </p>`;
 
   // animation for Airtag //
-  document.querySelector("#efficiency").classList.add("fadeIn");
-  document.querySelector("#requirement").classList.add("fadeInSlow");
+  efficiency.classList.add("fadeIn");
+  requirement.classList.add("fadeInSlow");
 }
 
 // For reb //
 
-document.querySelector("#Reb").addEventListener("mouseover", mouseOverReb);
+reb.addEventListener("mouseover", mouseOverReb);
 
-document.querySelector("#Reb").addEventListener("mouseout", mouseOutReb);
+reb.addEventListener("mouseout", mouseOutReb);
 
-document.querySelector("#Reb").addEventListener("click", clickReb);
+reb.addEventListener("click", clickReb);
 
 function mouseOverReb() {
   console.log("mouseOverReb");
 
-  document.querySelector("#Reb").style.fill = "var(--primary-bg-color)";
+  reb.style.fill = "var(--primary-bg-color)";
 }
 
 function mouseOutReb() {
   console.log("mouseOutReb");
 
-  document.querySelector("#Reb").style.fill = "pink";
+  reb.style.fill = "pink";
 }
 
 function clickReb() {
   console.log("clickReb");
 
-  document.querySelector(".info-text > h2").textContent = "Reb";
+  overskrift.textContent = "Reb";
 
-  document.querySelector(".placeholder").textContent =
-    "husk at du får brug for et Reb....";
+  placeholder.textContent = "husk at du får brug for et Reb....";
 
-  document.querySelector("#efficiency").innerHTML = `<h3>Oliver</h3> 
+  efficiency.innerHTML = `<h3>Oliver</h3> 
 <p>bla bla lba </p>`;
-  document.querySelector("#requirement").innerHTML = `<h3>Oliver</h3> 
+  requirement.innerHTML = `<h3>Oliver</h3> 
 <p>Nu er det altså snart weekend </p>`;
 
   // animation for Reb //
 
-  document.querySelector("#efficiency").classList.add("fadeIn");
-  document.querySelector("#requirement").classList.add("fadeInSlow");
+  efficiency.classList.add("fadeIn");
+  requirement.classList.add("fadeInSlow");
 }

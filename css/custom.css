@@ -1,7 +1,7 @@
 :root {
   /* Colours */
   --color-bg: #fff5c4;
-  /* page background /*
+  /* page background */
 
   /* Header */
   --color-head-bg: #de8926;
@@ -47,7 +47,7 @@
   --color-cta-newscard-bg-inverted: #7b7d83;
 
   /* Fonts */
-  --font-family-sans: ui-sans-serif;
+  --font-family-sans: "Rubik", ui-sans-serif;
   /* --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
