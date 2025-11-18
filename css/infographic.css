@@ -13,7 +13,7 @@
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
-  background-color: var(--color-headline-bg);
+  background-color: #d23f00;
   color: var(--color-headline-text-page);
   margin-bottom: 1rem;
 }
@@ -42,7 +42,7 @@
 }
 
 .fadeIn {
-  animation: fadeIn_kf 2s linear;
+  animation: fadeIn_kf 1s linear;
 }
 
 @keyframes fadeIn_kf {
@@ -64,5 +64,19 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+.dialogRotate {
+  animation: rotate 1s linear;
+}
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+    opacity: 1;
+  }
+  100% {
+    rotate: 360deg;
+    opacity: 0;
   }
 }

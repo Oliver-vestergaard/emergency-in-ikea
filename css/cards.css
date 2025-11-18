@@ -24,7 +24,6 @@
 }
 .daily_text .cta_btn {
   justify-self: left;
-  width: 80%;
 }
 .daily_img {
   width: 100%;
@@ -53,7 +52,7 @@
 }
 .news_card:first-child:before {
   content: "BREAKING NEWS";
-  background-color: var(--color-headline-bg);
+  background-color: #d23f00;
   color: var(--color-headline-text-page);
   font-size: var(--font-h3-size);
   font-weight: var(--font-weight-medium);
@@ -90,4 +89,100 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+/* EGEN STYLING */
+::backdrop {
+  backdrop-filter: blur(5px);
+}
+
+dialog {
+  background-color: light-dark(#de8926, #925917);
+  padding: 2rem 0;
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.modal_overskrift {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.mymodaler {
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+.mymodaler p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.mymodaler img {
+  margin-bottom: 1rem;
+}
+
+.closebtn {
+  display: block;
+  margin: 0rem auto 0 auto;
+  padding: 0.6rem 1.5rem;
+
+  background-color: #d23f00;
+
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  margin-bottom: 1rem;
+}
+
+.closebtn:hover {
+  background-color: #de8926;
+  color: white;
+}
+
+.cta_btn {
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+[popover] {
+  padding: 1rem;
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+
+  &:popover-open {
+    border-radius: 8px;
+  }
+
+  &::backdrop {
+    background: #0008;
+  }
+
+  background-color: light-dark(#de8926, #925917);
+}
+
+[popover] {
+  opacity: 0;
+  scale: 95%;
+  transition: 0.5s allow-discrete;
+}
+
+:popover-open {
+  opacity: 1;
+  scale: none;
+
+  @starting-style {
+    opacity: 0;
+    scale: 95%;
+  }
+}
+
+body:has([popover]:popover-open) {
+  overflow: hidden;
+}
+
+#Bagpack {
+  height: 200px;
 }

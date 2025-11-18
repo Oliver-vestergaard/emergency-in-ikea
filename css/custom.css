@@ -1,21 +1,22 @@
 :root {
+  color-scheme: light;
   /* Colours */
-  --color-bg: #fff5c4;
+  --color-bg: light-dark(#fff5c4, #1e1a18);
   /* page background */
 
   /* Header */
-  --color-head-bg: #de8926;
+  --color-head-bg: light-dark(#de8926, #925917);
 
   /* Logotype */
-  --color-logotype-bg: #000;
+  --color-logotype-bg: light-dark(#000, #696969)
   --color-text-logotype: #ffffff;
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #000000;
+  --color-menu-bg: light-dark(#000, #696969);
   /* Links */
-  --color-link-bg: #78766e;
-  --color-link-hover: #fff; /* used */
+  --color-link-bg: light-dark(#fffae2, #000);
+  --color-link-hover: light-dark(#fff, #000); /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 1px;
 
@@ -24,11 +25,11 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #de8926;
-  --color-headline-text-page: #ffffff;
+  --color-headline-bg: light-dark(#de8926, #1e1a18);
+  --color-headline-text-page: light-dark(#ffffff, #d9d9d9);
 
   /* Tekst */
-  --color-text: #000;
+  --color-text: light-dark(#000, #fff);
   --color-text-inverted: #fff;
 
   /*  Marginer */
@@ -38,13 +39,15 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #d23f00;
-  --color-cta-card-bg: #d5d2d0;
+  --color-card-bg: light-dark(#d23f00, #792500);
+  --color-cta-card-bg: light-dark(#de8926, #000);
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #787473;
-  --color-cta-newscard-bg-inverted: #7b7d83;
+  --color-news-bg: light-dark(#de8926, #925917);
+  --color-news-bg-inverted: #d23f00;
+  --color-cta-newscard-bg: light-dark(#d23f00, #000);
+  --color-cta-newscard-bg-inverted: light-dark(#de8926, #000);
+
+
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -64,7 +67,45 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
+  --color-info-bg: light-dark(#de8926, #925917);
   --color-infobox-1-bg: #cfcec6;
   --color-infobox-2-bg: #969995;
+}
+
+
+
+#webform { 
+    background-color: light-dark(#fff5c4, #1e1a18,);
+
+  }
+
+.logo_pic {
+  height: 20px;
+  width: auto;
+}
+
+.logo:hover {
+  background: none;
+}
+
+.menuItem {
+  border-radius: 20px;
+}
+
+p {
+  max-width: 50ch;
+}
+
+.index_overskrift {
+  font-size: xx-large;
+}
+
+#toggle {
+  background-color: light-dark(grey, #000);
+}
+
+/******** DARK MODE **********/
+
+html.dark {
+  color-scheme: dark;
 }

@@ -59,7 +59,7 @@
 }
 
 input:focus {
-  background-color: white;
+  background-color: light-dark(#fff, #1e1a18);
   border-color: #000;
 }
 
@@ -95,7 +95,9 @@ fieldset {
   display: none;
 }
 
-.form-group:has(:required) label::after {
-  content: " *";
-  color: red;
+.form_group:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
 }

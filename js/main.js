@@ -22,7 +22,7 @@ function mouseOverNoedlager() {
 function mouseOutNoedlager() {
   console.log("mouseOutNoedlager");
 
-  noedlager.style.fill = "pink";
+  noedlager.style.fill = "#de8926";
 }
 
 function clickNoedlager() {
@@ -30,7 +30,7 @@ function clickNoedlager() {
 
   overskrift.textContent = "Nødlager";
 
-  placeholder.textContent = "husk at du får brug for et nødlager....";
+  placeholder.textContent = "Ifølge eksperterne, er det vigtigt at proviantere inden turen går til Ikea. Det er nemlig ikke sikkert at man når hele vejen til restauranten i tide. Skulle uheldet være ude, er det en god ide med lidt ekstra til maven. Her anbefales bønner på konserves, da de har lang holdbarhed";
 
   efficiency.innerHTML = `<h3>Oliver</h3> 
 <p>bla bla lba </p>`;
@@ -60,7 +60,7 @@ function mouseOverAirtag() {
 function mouseOutAirtag() {
   console.log("mouseOutAirtag");
 
-  Airtag.style.fill = "pink";
+  Airtag.style.fill = "#de8926";
 }
 
 function clickAirtag() {
@@ -97,7 +97,7 @@ function mouseOverReb() {
 function mouseOutReb() {
   console.log("mouseOutReb");
 
-  reb.style.fill = "pink";
+  reb.style.fill = "#de8926";
 }
 
 function clickReb() {
@@ -105,7 +105,7 @@ function clickReb() {
 
   overskrift.textContent = "Reb";
 
-  placeholder.textContent = "husk at du får brug for et Reb....";
+  placeholder.textContent = "Ifølge eksperterne, er Sikkerhedsrebet en god og fornuftig forholdsregel. Rebet kan, inklusiv karbinhage, købes for 199kr i alle spejdersport og div friluftsliv butikker";
 
   efficiency.innerHTML = `<h3>Oliver</h3> 
 <p>bla bla lba </p>`;
