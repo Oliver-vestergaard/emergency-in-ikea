@@ -3,13 +3,20 @@
 }
 
 *,
+/*
 ::before,
 ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+*/ 
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
 html {
   interpolate-size: allow-keywords;
   font-family: system-ui, sans-serif;
