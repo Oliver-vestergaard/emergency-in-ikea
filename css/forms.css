@@ -51,7 +51,7 @@
 }
 
 .form_group select:user-invalid {
-  border: 2px solid red;
+  border: 2px solid #df0d0b;
 }
 
 .form_group textarea {
@@ -64,7 +64,7 @@ input:focus {
 }
 
 input:invalid {
-  border: 2px solid red;
+  border: 2px solid #df0d0b;
 }
 
 input:valid {
@@ -73,7 +73,7 @@ input:valid {
 
 input:invalid + span::before {
   content: "Venligt indtast en gyldig Email";
-  color: red;
+  color: #df0d0b;
 }
 
 fieldset {
@@ -98,6 +98,6 @@ fieldset {
 .form_group:has(:required) {
   label::after {
     content: " *";
-    color: red;
+    color: #df0d0b;
   }
 }

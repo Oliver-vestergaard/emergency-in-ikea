@@ -32,10 +32,9 @@ function clickNoedlager() {
 
   placeholder.textContent = "Ifølge eksperterne, er det vigtigt at proviantere inden turen går til Ikea. Det er nemlig ikke sikkert at man når hele vejen til restauranten i tide. Skulle uheldet være ude, er det en god ide med lidt ekstra til maven. Her anbefales bønner på konserves, da de har lang holdbarhed";
 
-  efficiency.innerHTML = `<h3>Oliver</h3> 
-<p>bla bla lba </p>`;
-  requirement.innerHTML = `<h3>Oliver</h3> 
-<p>Nu er det altså snart weekend </p>`;
+  efficiency.innerHTML = `<img  class="airtagpic" src="img/SurvivalStuff_noedlager.webp" alt="billede af reb">`;
+  requirement.innerHTML = `<h3>Kan købes hos</h3> 
+ <a href="Her.skulle.man.saa.komme.til.Nettos.hjemmeside">Netto</a>`;
 
   // animation for Noedlager //
 
@@ -68,12 +67,12 @@ function clickAirtag() {
 
   overskrift.textContent = "Airtag";
 
-  placeholder.textContent = "husk at du får brug for et Airtag....";
+  placeholder.textContent = "Skal du en tur i Ikea? Så anbefaler eksperterne at huske at medbringe en airtag. Den koster kun 199, og kræver desuden at du downloader appen ´Find´ ";
 
-  efficiency.innerHTML = `<h3>Oliver</h3> 
-<p>bla bla lba </p>`;
-  requirement.innerHTML = `<h3>Oliver</h3> 
-<p>Nu er det altså snart weekend </p>`;
+  efficiency.innerHTML = `<img  class="airtagpic" src="img/SurvivalStuff_airtag.webp" alt="billede af reb">`;
+
+  requirement.innerHTML = `<h3>Kan købes hos</h3> 
+ <a href="Her.skulle.man.saa.komme.til.Elgigantens.hjemmeside">Elgiganten</a>`;
 
   // animation for Airtag //
   efficiency.classList.add("fadeIn");
@@ -103,14 +102,14 @@ function mouseOutReb() {
 function clickReb() {
   console.log("clickReb");
 
-  overskrift.textContent = "Reb";
+  overskrift.textContent = "Sikkerhedsreb";
 
-  placeholder.textContent = "Ifølge eksperterne, er Sikkerhedsrebet en god og fornuftig forholdsregel. Rebet kan, inklusiv karbinhage, købes for 199kr i alle spejdersport og div friluftsliv butikker";
+  placeholder.textContent = "Ifølge eksperterne, er Sikkerhedsrebet en god og fornuftig forholdsregel. Rebet kan, inklusiv karbinhage, købes for 299kr i alle spejdersport og div friluftsliv butikker";
 
-  efficiency.innerHTML = `<h3>Oliver</h3> 
-<p>bla bla lba </p>`;
-  requirement.innerHTML = `<h3>Oliver</h3> 
-<p>Nu er det altså snart weekend </p>`;
+  efficiency.innerHTML = `
+<img src="img/SurvivalStuff_reb.webp" alt="billede af reb">`;
+  requirement.innerHTML = `<h3>Kan købes hos </h3> 
+ <a href="Her.skulle.man.saa.komme.til.spejdersports.hjemmeside">SpejderSport</a>`;
 
   // animation for Reb //
 

@@ -8,7 +8,7 @@
   --color-head-bg: light-dark(#de8926, #925917);
 
   /* Logotype */
-  --color-logotype-bg: light-dark(#000, #696969)
+  --color-logotype-bg: light-dark(#000, #696969);
   --color-text-logotype: #ffffff;
   --font-logotype-size: 1rem;
 
@@ -29,14 +29,14 @@
   --color-headline-text-page: light-dark(#ffffff, #d9d9d9);
 
   /* Tekst */
-  --color-text: light-dark(#000, #fff);
-  --color-text-inverted: #fff;
+  --color-text: light-dark(#000, #c5c5c5);
+  --color-text-inverted: light-dark(#fff, #c5c5c5);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
 
   /* Borders */
-  --border-radius: 5px;
+  --border-radius: 25px;
 
   /* Cards */
   --color-card-bg: light-dark(#d23f00, #792500);
@@ -46,8 +46,6 @@
   --color-news-bg-inverted: #d23f00;
   --color-cta-newscard-bg: light-dark(#d23f00, #000);
   --color-cta-newscard-bg-inverted: light-dark(#de8926, #000);
-
-
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -68,16 +66,29 @@
 
   /* Infographics */
   --color-info-bg: light-dark(#de8926, #925917);
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-infobox-1-bg: light-dark(#cfcec6, #1e1a18);
+  --color-infobox-2-bg: light-dark(#969995, #000);
 }
 
+.register_tekst {
+  margin-bottom: 3rem;
+}
 
+img.airtagpic {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: auto;
+}
 
-#webform { 
-    background-color: light-dark(#fff5c4, #1e1a18,);
+#Ikea {
+  width: 200px;
+  height: auto;
+}
 
-  }
+#webform {
+  background-color: light-dark(#fff5c4, #1e1a18);
+}
 
 .logo_pic {
   height: 20px;
@@ -101,7 +112,11 @@ p {
 }
 
 #toggle {
-  background-color: light-dark(grey, #000);
+  display: inline-block;
+  padding: 0rem 1rem;
+
+  border-radius: var(--border-radius);
+  background-color: light-dark(#fff5c4, #1e1a18);
 }
 
 /******** DARK MODE **********/
